@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hangman Game">
+    <meta name="keywords" content="Hangman, game, hangman game, letters">
+    <!-- Mobile Responsive Viewport info-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/
+	bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--Native Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+    <title>Hangman Game</title>
+</head>
+
+<body>
+    <!--Navigation Bar -->
+    <nav class="nav navbar">
+        <div class="container row">
+            <div class="col-md-3 col-sm-12 logo">
+                <img src="assets/css/images/HPLogo2.png" style="height: 6em">
+            </div>
+            <div class="container row">
+                <div class="title col-md-12 col-sm-12">
+                    <h1> Hangman Game </h1></div>
+            </div>
+        </div>
+    </nav>
+    <!--Background -->
+    <div class="container bg-color row">
+        <div class="col-12 d-flex justify-content-center">
+            <!--Images -->
+            <div class="imageContainer col-lg-5 col-md-12">CAT</div>
+            <!--Hangman Input -->
+            <div class="imageContainer2 col-lg-5 col-md-12">
+                <div class="hangmanTitle row col-12 pt-3 pb-1">Wizard's Hangman Game</div>
+                <div class="hangmanDirections row col-12 pb-2">Press SPACE to get started!</div>
+                <div class="currentWord row col-12 pb-2 justify-content-center"> Current Word</div>
+                
+                <div id="blank row col-12 justify-content-center pb-2">---</div>
+                <hr>
+                <div class="win row col-md-6 col-sm-12 pb-2"> Wins:</div>
+                <div class="lose row col-md-6 col-sm-12 pb-2">Loses</div>
+                <div class="guess row col-6 pb-2">Guesses Remaining</div>
+                <div class="alreadyGuessed row col-6 pb-2">You've already guessed</div>
+            </div> <!--Container 2 closing tag-->
+            <!--Image background -->
+            <img class="background" src="assets/css/images/jumbotronImg.jpg" alt="background">
+        </div>
+        <!--Main container-->
+    </div>
+    <!--black box container closing tag-->
+    <!--Footer -->
+    <div class="container-fluid m-0 p-0">
+        <div class="row">
+            <div class="col-12">
+                <div class="footer pt-4"> &#169 Copyright 2017 Stephanie Bruyere </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <!--Javascript Stylesheet -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <!-- bootstrap requires jQuery - load it before the bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</footer>
+
+</html>

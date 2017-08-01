@@ -1,0 +1,122 @@
+body {
+	background-color: #292e37;
+}
+
+
+.bg-color {
+	background-color: #292e37;
+	width: 100%;
+	height: 720px;
+}
+
+.container {
+	margin:0;
+	padding:0;
+}
+
+.navbar {
+	z-index: 1;
+	padding: 0;
+	max-height: 6em;
+	min-height: 6em;
+	background-color: white;
+	width:100%;
+}
+
+.nav {
+	padding:0;
+	background-color: white;
+	position:absolute;
+}
+
+.title {
+	text-align: right;
+	font-family: 'Alice', serif;
+	float:right;
+
+}
+
+.imageContainer {
+	background-color: black;
+	opacity: 100%;
+	height:20em;
+	z-index: 3;
+	margin-top: 50px;
+	position: relative;
+	margin: 7em 0 0 1em;
+	min-width: 20em;
+	opacity:0.75;
+}
+
+.imageContainer2 {
+	background-color: black;
+	color:white;
+	opacity: 100%;
+	height:65%;
+	z-index: 3;
+	margin-top: 50px;
+	position: relative;
+	margin: 7em 0 0 1em;
+	min-width: 20em;
+	opacity:0.75;
+}
+
+.background {
+   box-shadow: 0px .5em .5em .5em black;
+   opacity: 0.5;
+   margin-bottom: 0em;
+   position: fixed;
+}
+
+.logo {
+	height:3em;
+	max-width:4em;
+	padding-bottom: 3em;
+	float:left;
+}
+
+
+.footer {
+	z-index: 2;
+	background-color: #0e1215;
+	height:5em;
+	text-align: center;
+	color:white;
+	font-family: 'Alice', serif;
+	font-size: 75%;
+}
+
+.hangmanTitle {
+	color:white;
+	font-family: 'Alice', serif;	
+	font-size: 2em;
+	text-align: center;
+	justify-content: center;
+}
+
+.hangmanDirections {
+	color: white;
+	font-family: 'ABeeZee', sans-serif;
+	justify-content: center;
+	font-size:1em;
+}
+
+hr {
+	border-color:white;
+}
+
+.currentWord {
+	font-family: 'Alice', serif;
+}
+
+.blank {
+	color:white;
+	text-align: center;
+}
+
+@media screen and (max-width: 640px) and (min-width: 240px){
+
+	h1 {
+		display:none; 
+	}
+}	
