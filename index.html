@@ -39,15 +39,18 @@
             <!--Hangman Input -->
             <div class="imageContainer2 col-lg-5 col-md-12">
                 <div class="hangmanTitle row col-12 pt-3 pb-1">Wizard's Hangman Game</div>
-                <div class="hangmanDirections row col-12 pb-2">Press SPACE to get started!</div>
+                <div class="hangmanDirections row col-12 pb-2">Press ENTER to get started!</div>
                 <div class="currentWord row col-12 pb-2 justify-content-center"> Current Word</div>
                 
-                <div id="blank row col-12 justify-content-center pb-2">---</div>
+                <div class="row col-12 justify-content-center pb-2">
+                <p id="word"> </p> </div>
                 <hr>
-                <div class="win row col-md-6 col-sm-12 pb-2"> Wins:</div>
-                <div class="lose row col-md-6 col-sm-12 pb-2">Loses</div>
-                <div class="guess row col-6 pb-2">Guesses Remaining</div>
+                    <p> Guessed Letters</p>
+                    <p id="guessedLetters"></p>
+                    <p id="wins"></p>
+                    <p id="losses"> </p> 
                 <div class="alreadyGuessed row col-6 pb-2">You've already guessed</div>
+                <p id="status">
             </div> <!--Container 2 closing tag-->
             <!--Image background -->
             <img class="background" src="assets/css/images/jumbotronImg.jpg" alt="background">
