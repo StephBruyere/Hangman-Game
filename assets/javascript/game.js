@@ -1,10 +1,10 @@
 var guessedLetters = [];
 
-var wizards = ["potter", "voldemort", "hogwarts", "wand", "broom", "firebolt", "nimbus", "dumbledore"];
+var wizards = ["potter", "Voldemort", "Hogwarts", "Wand", "broom", "firebolt", "nimbus", "dumbledore"];
 
 var arr = wizards[Math.floor(Math.random() * wizards.length)];
 
-var blank = new Array(arr.lenght);
+var blank = new Array(arr.length);
 
 var numGuessRem = arr.length + 5;
 
@@ -39,6 +39,7 @@ function winCounter() {
 }
 
 // Records losses and stores on browser to reference later
+
 function lossCounter() {
     if (typeof(Storage) !== "undefined") {
         if (sessionStorage.losscount) {
@@ -50,18 +51,16 @@ function lossCounter() {
         }
         document.getElementById("losses").innerHTML = 'Losses: ' + sessionStorage.losscount;
     } else {
-        document.getElementById("losses").innerHTML = "Sorry, your browser does not support web storage...";
+        document.getElementById("losses").innerHTML = "Update your browser to save your game!";
     }
 }
-
-
 
 
 function include(arr, obj) {
 
     if (guessedLetters.indexOf(obj) > -1 && numGuessRem >= 1) {
         wrongGuess--;
-        document.getElementById('status').innerHTML = 'You Guessed That Letter Already, you have ' + wrongGuess + ' wrong guess\' remaining';
+        document.getElementById('lives').innerHTML = 'You Guessed That Letter Already, you have ' + wrongGuess + ' wrong guess\' remaining';
     } else if (arr.indexOf(obj) === -1 && guessedLetters.indexOf(obj) === -1 && numGuessRem >= 1 && arr.split(" ").toString() != blank.join()) {
         wrongGuess--;
         document.getElementById('status').innerHTML = 'Try Again, you have ' + wrongGuess + ' wrong guess\' remaining';
@@ -124,6 +123,6 @@ document.onkeyup = function(event) {
             arraysEqual(arr, blank);
         }
     }
-    document.getElementById('word').innerHTML = blank.join(' ');
-    document.getElementById('guessedLetters').innerHTML = guessedLetters.join(' ');
+    document.getElementById("word").innerHTML = blank.join(' ');
+    document.getElementById("guessedLetters").innerHTML = guessedLetters.join(' ');
 }

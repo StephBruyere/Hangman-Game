@@ -1,17 +1,25 @@
 body {
-	background-color: #292e37;
+
+	background-image: url("images/jumbotronImg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 1;
+	box-shadow: 0px .5em .5em .5em black;
+   	background-color: #292e37;
 }
 
 
-.bg-color {
-	background-color: #292e37;
-	width: 100%;
-	height: 720px;
-}
-
+/* BOOTSTRAP CLASSES =================================================================== */
 .container {
 	margin:0;
 	padding:0;
+
+}
+
+.container-fluid {
+	margin:0;
+	padding:0;
+	z-index: 2;
 }
 
 .navbar {
@@ -27,25 +35,29 @@ body {
 	padding:0;
 	background-color: white;
 	position:absolute;
+	border-radius: 0;
 }
 
+.row {
+	margin:0;
+	padding:0;
+}
+/* CUSTOM CLASSES =================================================================== */
+
+.bg-color {
+	width: 100%;
+	height: 720px;
+	background-color: (#292e37);
+	height: 
+}
 .title {
 	text-align: right;
 	font-family: 'Alice', serif;
 	float:right;
-
 }
 
 .imageContainer {
-	background-color: black;
-	opacity: 100%;
-	height:20em;
-	z-index: 3;
-	margin-top: 50px;
-	position: relative;
-	margin: 7em 0 0 1em;
-	min-width: 20em;
-	opacity:0.75;
+	margin: 7em 0 12em 1em;
 }
 
 .imageContainer2 {
@@ -54,18 +66,16 @@ body {
 	opacity: 100%;
 	height:10%;
 	z-index: 3;
-	margin-top: 50px;
 	position: relative;
-	margin: 7em 0 0 1em;
-	min-width: 20em;
-	opacity:0.75;
+	margin: 7em 0 12em 1em;
 }
 
-.background {
+.image {
    box-shadow: 0px .5em .5em .5em black;
    opacity: 0.5;
-   margin-bottom: 0em;
-   position: fixed;
+   width: 100%;
+   text-align: center;
+
 }
 
 .logo {
@@ -84,6 +94,9 @@ body {
 	color:white;
 	font-family: 'Alice', serif;
 	font-size: 75%;
+	margin-top: 5em;
+	padding-top: 2em;
+	width: 100%;
 }
 
 .hangmanTitle {
@@ -92,13 +105,16 @@ body {
 	font-size: 2em;
 	text-align: center;
 	justify-content: center;
+	line-height: 1.5;
 }
 
 .hangmanDirections {
 	color: white;
 	font-family: 'ABeeZee', sans-serif;
 	justify-content: center;
+	text-align: center;
 	font-size:1em;
+	line-height: : 2;
 }
 
 hr {
@@ -107,12 +123,50 @@ hr {
 
 .currentWord {
 	font-family: 'Alice', serif;
+	line-height: 3;
+	text-align: center;
 }
 
 #word {
 	color:white;
 	text-align: center;
 }
+
+
+/* CARD FLIP CSS =================================================================== */
+#f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 450px;
+  height: 281px;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  padding: 10px;
+}
+
+/* REMOVE TITLE AT MOBILE =================================================================== */
 
 @media screen and (max-width: 640px) and (min-width: 240px){
 
