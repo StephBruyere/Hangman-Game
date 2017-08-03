@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!--Native Stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
     <!--Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Alice" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
@@ -19,6 +20,8 @@
 </head>
 
 <body>
+
+
     <!--Navigation Bar -->
     <nav class="nav navbar">
         <div class="container">
@@ -34,11 +37,13 @@
     </nav>
     <!--Background -->
     <!--main content container-->
-    <div class="container bg-color row">
-        <div class="d-flex justify-content-center">
-            <!--Images -->
-            <div class="empty col-1"> </div>
-            <div class="imageContainer col-lg-6 col-md-5">
+
+            <div class="display"> <img src="assets/css/images/jumbotronImg.jpg" "> </div>
+
+    <div class="container-fluid">
+    <div class="bg-color row">
+
+            <div class="imageContainer col-lg-4 col-md-4 col-sm-10">
                 <!-- START CARD FLIP-->
                 <div id="f1_container">
                     <div id="f1_card" class="shadow">
@@ -46,18 +51,19 @@
                             <img src="assets/css/images/swear2.jpg">
                         </div>
                         <div class="back face center">
-                            <img src="assets/css/images/mischief2.jpg">
+                            <img id="managed" src="assets/css/images/mischief2.jpg">
                         </div>
                     </div>
-                </div>
+                </div>            
                 <!-- END CARD FLIP-->
-            </div>
+        </div>
+    <div class="empty col 1"> &nbsp</div>
             <!--Hangman Input -->
-            <div class="imageContainer2 col-lg-4 col-md-5">
-                <div class="hangmanTitle row col-12 pt-3 mb-2">Wizard's Hangman Game</div>
-                <div class="hangmanDirections row col-12 mb-2">Press ENTER to get started!</div>
-                <div class="currentWord row col-12 pb-2 justify-content-center"> Current Word</div>
-                <div class="row col-12 justify-content-center pb-2">
+            <div class="imageContainer2 col-lg-4 col-md-4 col-sm-12 justify-content-center">
+                <div class="hangmanTitle pt-3 mb-2">Wizard's Hangman Game</div>
+                <div class="hangmanDirections mb-2">Press ENTER to get started!</div>
+                <div class="currentWord pb-1 justify-content-center"> Current Word</div>
+                <div class=" justify-content-center pb-2">
                     <p id="word"> </p>
                 </div>
                 <hr>
@@ -67,11 +73,11 @@
                 <p id="losses"> </p>
                 <p id="lives"> </p>
                 <p id="status"></p>
-                <div class="empty col-1"> </div>
             </div>
+        <div class="empty col 1"> &nbsp</div>
         </div>
     </div>
-    <!--black box container closing tag-->
+
     <!--Footer -->
     <div class="container-fluid">
         <div class="row">
@@ -80,6 +86,8 @@
             </div>
         </div>
     </div>
+
+
 </body>
 <footer>
     <!--Javascript Stylesheet -->

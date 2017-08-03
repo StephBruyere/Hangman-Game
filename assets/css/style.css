@@ -1,19 +1,45 @@
 body {
-
-	background-image: url("images/jumbotronImg.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	z-index: 1;
-	box-shadow: 0px .5em .5em .5em black;
    	background-color: #292e37;
+   	text-align: center;
 }
 
+h2 {
+	font-size: 4em;
+	color:gold;
+	font-style: bold;
+	line-height: 1;
+	text-align: center;
+}
+
+h3 {
+	font-size: 2em;
+	color:grey;
+	font-style: bold;
+	line-height: .5;
+	text-align: center;
+}
+
+h4 {
+	font-size: 1.5em;
+	color:white;
+	font-style: bold;
+	line-height: 1;
+	text-align: center;
+	border-radius: 2px;
+	padding: 10px;
+	border-style: solid;;
+	border-color: white;
+	border-width: 50%;
+	background-color: #292e37;
+}
+
+}
 
 /* BOOTSTRAP CLASSES =================================================================== */
+
 .container {
 	margin:0;
 	padding:0;
-
 }
 
 .container-fluid {
@@ -42,41 +68,50 @@ body {
 	margin:0;
 	padding:0;
 }
+
+div {
+	margin:0;
+	padding:0;
+}
+
 /* CUSTOM CLASSES =================================================================== */
 
-.bg-color {
+.display { /*backgroung image */
+	display:block;
+	position:absolute;
+	top:0px;
+	text-align: center;
 	width: 100%;
-	height: 720px;
-	background-color: (#292e37);
-	height: 
+	opacity: 0.5;	
 }
+
+.bg-color { /*staging*/
+	background-color: (#292e37);
+	width: 100%; 
+	overflow:auto;
+}
+
 .title {
 	text-align: right;
 	font-family: 'Alice', serif;
 	float:right;
 }
 
-.imageContainer {
+.imageContainer { /*cards */
 	margin: 7em 0 12em 1em;
+	z-index: 1;
+	margin-bottom: 25em;
+	position: relative;
 }
 
-.imageContainer2 {
-
+.imageContainer2 { /* Javascript */
 	color:white;
 	opacity: 100%;
-	height:10%;
-	z-index: 3;
-	position: relative;
+	z-index: 1;
 	margin: 7em 0 12em 1em;
+	position:relative;
 }
 
-.image {
-   box-shadow: 0px .5em .5em .5em black;
-   opacity: 0.5;
-   width: 100%;
-   text-align: center;
-
-}
 
 .logo {
 	height:3em;
@@ -85,9 +120,8 @@ body {
 	float:left;
 }
 
-
 .footer {
-	z-index: 2;
+	z-index: 3;
 	background-color: #0e1215;
 	height:5em;
 	text-align: center;
@@ -97,6 +131,8 @@ body {
 	margin-top: 5em;
 	padding-top: 2em;
 	width: 100%;
+	position:fixed;
+	bottom:0px;
 }
 
 .hangmanTitle {
@@ -111,7 +147,6 @@ body {
 .hangmanDirections {
 	color: white;
 	font-family: 'ABeeZee', sans-serif;
-	justify-content: center;
 	text-align: center;
 	font-size:1em;
 	line-height: : 2;
@@ -132,14 +167,22 @@ hr {
 	text-align: center;
 }
 
+#status {
+	font-family: 'Alice', serif;
+}
 
+.empty {
+	position: relative;
+	margin: 20 0 0em 0;
+}
 /* CARD FLIP CSS =================================================================== */
 #f1_container {
   position: relative;
-  margin: 10px auto;
-  width: 450px;
-  height: 281px;
+  margin: 10px 5%;
+  width: 100%;
+  height: 100%;
   z-index: 1;
+  display: block
 }
 #f1_container {
   perspective: 1000;
@@ -155,7 +198,7 @@ hr {
 
 }
 .face {
-  position: absolute;
+  position:fixed;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
@@ -165,6 +208,7 @@ hr {
   transform: rotateY(180deg);
   padding: 10px;
 }
+
 
 /* REMOVE TITLE AT MOBILE =================================================================== */
 
